@@ -26,6 +26,7 @@ int main()
 		A[i] = sum;
 	}
 
+	// Substract the Total Subarray - unwanted Subarray
 	cout << A[r]- A[l-1] << endl;
 
 }
