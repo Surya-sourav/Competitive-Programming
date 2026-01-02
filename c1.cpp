@@ -10,22 +10,16 @@ int main()
 	cin >> n;
 
 	cout << " Enter The Array Elements";
+	int sum = 0;
 	for(int i=1;i<=n;i++)
 	{
 		cin >> A[i];
-	}
-
-
-	cout << " Enter l & r";
-	int l , r ; cin >> l >> r;
-	int sum = 0;
-	//Pre-computed the Sub array values 1-n
-	for(int i=1;i<=n;i++)
-	{
 		sum+=A[i];
 		A[i] = sum;
 	}
 
+	cout << " Enter l & r";
+	int l , r ; cin >> l >> r;
 	// Substract the Total Subarray - unwanted Subarray
 	cout << A[r]- A[l-1] << endl;
 
